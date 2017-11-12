@@ -1,4 +1,4 @@
-/* line 5, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,56 +20,56 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 19, ../sass/_base.scss */
+/* line 21, ../scss/_base.scss */
 html {
   height: 100%;
   background: #20201F;
 }
 
-/* line 24, ../sass/_base.scss */
+/* line 26, ../scss/_base.scss */
 body {
   position: absolute;
   top: 0;
@@ -78,7 +78,7 @@ body {
   right: 0;
 }
 
-/* line 32, ../sass/_base.scss */
+/* line 34, ../scss/_base.scss */
 .border-corners {
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
@@ -90,13 +90,13 @@ body {
   border-style: solid;
 }
 
-/* line 40, ../sass/_base.scss */
+/* line 42, ../scss/_base.scss */
 #body-border {
   width: 100%;
   height: 100%;
 }
 
-/* line 46, ../sass/_base.scss */
+/* line 48, ../scss/_base.scss */
 .body-container {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -109,79 +109,160 @@ body {
   padding-bottom: 74px;
 }
 
-/* line 58, ../sass/_base.scss */
+/* line 60, ../scss/_base.scss */
 #footer {
   position: fixed;
   width: 100%;
-  height: 74px;
   bottom: 0px;
 }
 
-/* line 65, ../sass/_base.scss */
-#footer-menu {
-  width: 100%;
-  height: 74px;
-}
-
-/* line 70, ../sass/_base.scss */
+/* line 66, ../scss/_base.scss */
 #header {
-  position: fixed;
   width: 100%;
-  height: 74px;
-  bottom: 0px;
+  height: 140px;
 }
 
-/* line 77, ../sass/_base.scss */
-.flex-container {
+/* line 73, ../scss/_base.scss */
+.header-container {
+  padding-top: 15px;
   display: flex;
+}
+
+/* line 78, ../scss/_base.scss */
+.header-logo {
+  position: relative;
+  margin-left: 50px;
+  width: 11%;
+  z-index: 1;
+}
+
+/* line 86, ../scss/_base.scss */
+#echolarks-header-E {
+  background: url('../images/Echolarks_E.png?1497127441');
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+/* line 93, ../scss/_base.scss */
+.header-menu {
+  width: 100%;
+  height: 74px;
+}
+
+/* line 98, ../scss/_base.scss */
+.footer-container {
+  display: flex;
+  height: 74px;
+}
+
+/* line 103, ../scss/_base.scss */
+.footer-menu-item {
+  width: 33.33333%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33.33333%;
+}
+
+/* line 111, ../scss/_base.scss */
+.header-menu-item {
+  width: 33.33333%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33.33333%;
+}
+
+/* line 119, ../scss/_base.scss */
+.footer-menu {
+  position: relative;
+  display: flex;
+  width: 66.66667%;
+  z-index: -1;
+}
+
+/* line 126, ../scss/_base.scss */
+.header-menu {
+  position: relative;
+  display: flex;
+  width: 66.66667%;
+  padding-top: 44px;
+}
+/* line 132, ../scss/_base.scss */
+.header-menu a {
+  text-decoration: inherit;
+  color: #B3B3B3;
+  -webkit-transition: color .5s;
+  /* For Safari 3.0 to 6.0 */
+  transition: color .5s;
+  /* For modern browsers */
+}
+/* line 139, ../scss/_base.scss */
+.header-menu a:hover {
+  color: #EFC316;
+  /* animation for menu item hover */
+  -webkit-transition: color .5s;
+  /* For Safari 3.0 to 6.0 */
+  transition: color .5s;
+  /* For modern browsers */
+}
+
+/* line 148, ../scss/_base.scss */
+.footer-item {
   align-items: center;
   justify-content: center;
-  height: 74px;
-}
-/* line 85, ../sass/_base.scss */
-.flex-container.footer-menu {
-  width: 100%;
-  height: 74px;
 }
 
-/* line 91, ../sass/_base.scss */
-.flex-item {
-  height: 74px;
-}
-/* line 95, ../sass/_base.scss */
-.flex-item.footer-logo {
-  margin-left: 50px;
-  width: 33.33333%;
-}
-/* line 100, ../sass/_base.scss */
-.flex-item.footer-menu {
-  display: flex;
-  width: 66.66666%;
-}
-/* line 105, ../sass/_base.scss */
-.flex-item.footer-menu-item {
-  width: 33.33333%;
+/* line 153, ../scss/_base.scss */
+.item-left {
+  text-align: right;
+  width: 13.33333%;
 }
 
-/* line 110, ../sass/_base.scss */
-#echolarks-footer-logo {
-  background: url('../images/Echolarks_EP_Out_Now.png?1496446374');
-  background-repeat: no-repeat;
-  background-size: 450px;
-  background-position: center left;
+/* line 158, ../scss/_base.scss */
+.item-center {
+  text-align: center;
+  width: 50%;
 }
 
-/* line 117, ../sass/_base.scss */
-#echolarks-E {
-  background: imgage-url("Echolarks_E.png");
-  background-size: 450px;
-  height: 74px;
-  background-repeat: no-repeat;
-  background-position: center left;
+/* line 163, ../scss/_base.scss */
+.item-right {
+  text-align: left;
 }
 
-/* line 126, ../sass/_base.scss */
+/* line 168, ../scss/_base.scss */
 #footer-text {
-  color: #FFFFFF;
-  opacity: 0.66;
+  color: #B3B3B3;
+  opacity: 1;
+}
+
+/* line 173, ../scss/_base.scss */
+p {
+  font-size: 12pt;
+}
+
+/* line 177, ../scss/_base.scss */
+h1 {
+  font-size: 18pt;
+}
+
+/* line 181, ../scss/_base.scss */
+#header-text {
+  color: #B3B3B3;
+  opacity: 1;
+}
+
+/* line 188, ../scss/_base.scss */
+#echolarks-footer-logo {
+  background: url('../images/Echolarks_EP_Out_Now.png?1497127441');
+  background-repeat: no-repeat;
+  background-size: 450px;
+  height: 74px;
+  background-position: center left;
+}
+
+/* line 197, ../scss/_base.scss */
+.footer-logo {
+  position: relative;
+  margin-left: 50px;
+  width: 46.66667%;
+  z-index: 1;
 }
