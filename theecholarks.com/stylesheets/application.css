@@ -76,27 +76,11 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  font-family: "Times New Roman";
+  background: #20201F;
 }
 
 /* line 34, ../scss/_base.scss */
-.border-corners {
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 1px #EFC316;
-  border-style: solid;
-}
-
-/* line 42, ../scss/_base.scss */
-#body-border {
-  width: 100%;
-  height: 100%;
-}
-
-/* line 48, ../scss/_base.scss */
 .body-container {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -109,26 +93,57 @@ body {
   padding-bottom: 74px;
 }
 
-/* line 60, ../scss/_base.scss */
+/* line 46, ../scss/_base.scss */
+.border-corners {
+  display: flex;
+  flex-flow: column;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px #EFC316;
+  border-style: solid;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 58, ../scss/_base.scss */
+.border-corners .body-content {
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  left: 150px;
+  right: 150px;
+  margin-left: 0;
+  margin-right: 0;
+  max-height: 100%;
+  overflow: auto;
+}
+
+/* line 70, ../scss/_base.scss */
 #footer {
   position: fixed;
   width: 100%;
   bottom: 0px;
 }
 
-/* line 66, ../scss/_base.scss */
-#header {
+/* line 77, ../scss/_base.scss */
+.header-container {
+  flex: 0 1 auto;
   width: 100%;
   height: 140px;
-}
-
-/* line 73, ../scss/_base.scss */
-.header-container {
+  z-index: 10;
+  background: #20201F;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
   padding-top: 15px;
   display: flex;
 }
 
-/* line 78, ../scss/_base.scss */
+/* line 89, ../scss/_base.scss */
 .header-logo {
   position: relative;
   margin-left: 50px;
@@ -136,57 +151,57 @@ body {
   z-index: 1;
 }
 
-/* line 86, ../scss/_base.scss */
+/* line 97, ../scss/_base.scss */
 #echolarks-header-E {
   background: url('../images/Echolarks_E.png?1497127441');
   background-repeat: no-repeat;
   background-position: center left;
 }
 
-/* line 93, ../scss/_base.scss */
+/* line 104, ../scss/_base.scss */
 .header-menu {
   width: 100%;
   height: 74px;
 }
 
-/* line 98, ../scss/_base.scss */
+/* line 109, ../scss/_base.scss */
 .footer-container {
   display: flex;
   height: 74px;
 }
 
-/* line 103, ../scss/_base.scss */
+/* line 114, ../scss/_base.scss */
 .footer-menu-item {
   width: 33.33333%;
   margin-left: auto;
   margin-right: auto;
-  width: 33.33333%;
+  width: 33.33333333%;
 }
 
-/* line 111, ../scss/_base.scss */
+/* line 122, ../scss/_base.scss */
 .header-menu-item {
   width: 33.33333%;
   margin-left: auto;
   margin-right: auto;
-  width: 33.33333%;
+  width: 33.33333333%;
 }
 
-/* line 119, ../scss/_base.scss */
+/* line 130, ../scss/_base.scss */
 .footer-menu {
   position: relative;
   display: flex;
-  width: 66.66667%;
+  width: 66.66666667%;
   z-index: -1;
 }
 
-/* line 126, ../scss/_base.scss */
+/* line 137, ../scss/_base.scss */
 .header-menu {
   position: relative;
   display: flex;
-  width: 66.66667%;
+  width: 66.66666667%;
   padding-top: 44px;
 }
-/* line 132, ../scss/_base.scss */
+/* line 143, ../scss/_base.scss */
 .header-menu a {
   text-decoration: inherit;
   color: #B3B3B3;
@@ -195,7 +210,7 @@ body {
   transition: color .5s;
   /* For modern browsers */
 }
-/* line 139, ../scss/_base.scss */
+/* line 150, ../scss/_base.scss */
 .header-menu a:hover {
   color: #EFC316;
   /* animation for menu item hover */
@@ -205,52 +220,53 @@ body {
   /* For modern browsers */
 }
 
-/* line 148, ../scss/_base.scss */
+/* line 159, ../scss/_base.scss */
 .footer-item {
   align-items: center;
   justify-content: center;
 }
 
-/* line 153, ../scss/_base.scss */
+/* line 164, ../scss/_base.scss */
 .item-left {
   text-align: right;
-  width: 13.33333%;
+  width: 13.33333333%;
 }
 
-/* line 158, ../scss/_base.scss */
+/* line 169, ../scss/_base.scss */
 .item-center {
   text-align: center;
   width: 50%;
 }
 
-/* line 163, ../scss/_base.scss */
+/* line 174, ../scss/_base.scss */
 .item-right {
   text-align: left;
 }
 
-/* line 168, ../scss/_base.scss */
+/* line 179, ../scss/_base.scss */
 #footer-text {
   color: #B3B3B3;
   opacity: 1;
 }
 
-/* line 173, ../scss/_base.scss */
+/* line 184, ../scss/_base.scss */
 p {
   font-size: 12pt;
+  color: #B3B3B3;
 }
 
-/* line 177, ../scss/_base.scss */
+/* line 189, ../scss/_base.scss */
 h1 {
   font-size: 18pt;
 }
 
-/* line 181, ../scss/_base.scss */
+/* line 193, ../scss/_base.scss */
 #header-text {
   color: #B3B3B3;
   opacity: 1;
 }
 
-/* line 188, ../scss/_base.scss */
+/* line 200, ../scss/_base.scss */
 #echolarks-footer-logo {
   background: url('../images/Echolarks_EP_Out_Now.png?1497127441');
   background-repeat: no-repeat;
@@ -259,10 +275,10 @@ h1 {
   background-position: center left;
 }
 
-/* line 197, ../scss/_base.scss */
+/* line 209, ../scss/_base.scss */
 .footer-logo {
   position: relative;
   margin-left: 50px;
-  width: 46.66667%;
+  width: 46.66666667%;
   z-index: 1;
 }
