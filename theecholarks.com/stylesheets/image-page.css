@@ -8900,40 +8900,38 @@ body {
 }
 
 /* line 58, ../scss/_base.scss */
-.border-corners .body-content {
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
+.body-content {
+  flex: 1;
   left: 150px;
   right: 150px;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0 4%;
   max-height: 100%;
   overflow: auto;
 }
 
-/* line 70, ../scss/_base.scss */
+/* line 68, ../scss/_base.scss */
 #footer {
   position: fixed;
   width: 100%;
   bottom: 0px;
 }
 
-/* line 77, ../scss/_base.scss */
+/* line 75, ../scss/_base.scss */
 .header-container {
   flex: 0 1 auto;
   width: 100%;
-  height: 140px;
+  height: 162px;
   z-index: 10;
   background: #20201F;
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
-  padding-top: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   display: flex;
 }
 
-/* line 89, ../scss/_base.scss */
+/* line 88, ../scss/_base.scss */
 .header-logo {
   position: relative;
   margin-left: 50px;
@@ -8941,42 +8939,52 @@ body {
   z-index: 1;
 }
 
-/* line 97, ../scss/_base.scss */
+/* line 96, ../scss/_base.scss */
 #echolarks-header-E {
   background: url('../images/Echolarks_E.png?1497127441');
   background-repeat: no-repeat;
   background-position: center left;
 }
 
-/* line 104, ../scss/_base.scss */
+/* line 103, ../scss/_base.scss */
 .header-menu {
   width: 100%;
   height: 74px;
 }
 
-/* line 109, ../scss/_base.scss */
+/* line 108, ../scss/_base.scss */
 .footer-container {
   display: flex;
   height: 74px;
 }
 
-/* line 114, ../scss/_base.scss */
+/* line 113, ../scss/_base.scss */
 .footer-menu-item {
   width: 33.33333%;
   margin-left: auto;
   margin-right: auto;
   width: 33.33333333%;
 }
+/* line 118, ../scss/_base.scss */
+.footer-menu-item a {
+  text-decoration: inherit;
+  color: #B3B3B3;
+}
 
-/* line 122, ../scss/_base.scss */
+/* line 125, ../scss/_base.scss */
 .header-menu-item {
   width: 33.33333%;
   margin-left: auto;
   margin-right: auto;
   width: 33.33333333%;
 }
-
 /* line 130, ../scss/_base.scss */
+.header-menu-item a {
+  text-decoration: inherit;
+  color: #B3B3B3;
+}
+
+/* line 137, ../scss/_base.scss */
 .footer-menu {
   position: relative;
   display: flex;
@@ -8984,24 +8992,15 @@ body {
   z-index: -1;
 }
 
-/* line 137, ../scss/_base.scss */
-.header-menu {
-  position: relative;
-  display: flex;
-  width: 66.66666667%;
-  padding-top: 44px;
-}
-/* line 143, ../scss/_base.scss */
-.header-menu a {
-  text-decoration: inherit;
-  color: #B3B3B3;
+/* line 145, ../scss/_base.scss */
+.hover-gold a {
   -webkit-transition: color .5s;
   /* For Safari 3.0 to 6.0 */
   transition: color .5s;
   /* For modern browsers */
 }
 /* line 150, ../scss/_base.scss */
-.header-menu a:hover {
+.hover-gold a:hover {
   color: #EFC316;
   /* animation for menu item hover */
   -webkit-transition: color .5s;
@@ -9011,52 +9010,60 @@ body {
 }
 
 /* line 159, ../scss/_base.scss */
+.header-menu {
+  position: relative;
+  display: flex;
+  width: 66.66666667%;
+  padding-top: 44px;
+}
+
+/* line 166, ../scss/_base.scss */
 .footer-item {
   align-items: center;
   justify-content: center;
 }
 
-/* line 164, ../scss/_base.scss */
+/* line 171, ../scss/_base.scss */
 .item-left {
   text-align: right;
   width: 13.33333333%;
 }
 
-/* line 169, ../scss/_base.scss */
+/* line 176, ../scss/_base.scss */
 .item-center {
   text-align: center;
   width: 50%;
 }
 
-/* line 174, ../scss/_base.scss */
+/* line 181, ../scss/_base.scss */
 .item-right {
   text-align: left;
 }
 
-/* line 179, ../scss/_base.scss */
+/* line 186, ../scss/_base.scss */
 #footer-text {
   color: #B3B3B3;
   opacity: 1;
 }
 
-/* line 184, ../scss/_base.scss */
+/* line 191, ../scss/_base.scss */
 p {
   font-size: 12pt;
   color: #B3B3B3;
 }
 
-/* line 189, ../scss/_base.scss */
+/* line 196, ../scss/_base.scss */
 h1 {
   font-size: 18pt;
 }
 
-/* line 193, ../scss/_base.scss */
+/* line 200, ../scss/_base.scss */
 #header-text {
   color: #B3B3B3;
   opacity: 1;
 }
 
-/* line 200, ../scss/_base.scss */
+/* line 207, ../scss/_base.scss */
 #echolarks-footer-logo {
   background: url('../images/Echolarks_EP_Out_Now.png?1497127441');
   background-repeat: no-repeat;
@@ -9065,7 +9072,7 @@ h1 {
   background-position: center left;
 }
 
-/* line 209, ../scss/_base.scss */
+/* line 216, ../scss/_base.scss */
 .footer-logo {
   position: relative;
   margin-left: 50px;
@@ -9073,9 +9080,30 @@ h1 {
   z-index: 1;
 }
 
-/* line 4, ../scss/image-page.scss */
-.gallery_product {
-  margin-bottom: 30px;
-  top: 50%;
-  vertical-align: middle;
+/* line 226, ../scss/_base.scss */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* line 231, ../scss/_base.scss */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* line 238, ../scss/_base.scss */
+.dropdown-content a {
+  color: #B3B3B3;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+/* line 246, ../scss/_base.scss */
+.dropdown:hover .dropdown-content {
+  display: block;
 }

@@ -1,18 +1,13 @@
 @import "bootstrap";
 @import "base";
 
-.gallery_product
-{
-  margin-bottom: 30px;
-  top: 50%;
-  vertical-align: middle;
-  
-}
 
 .about-text {
-    vertical-align: center;
-    text-indent: 40px;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
 }
+
 
 p {
   font-size: 14pt;
